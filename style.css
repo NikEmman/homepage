@@ -44,6 +44,51 @@ header {
     background-color: #0a90b1;
 }
 
+.container {
+    display: flex;
+    justify-content: space-around;
+    padding: 2em;
+}
+
+.img-container {
+    flex: 1;
+    display: flex;
+    background-image: url("assets/profile.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    align-items: end;
+    position: relative;
+    left: 4em;
+}
+
+.img-container p {
+    width: 100%;
+    color: white;
+    font-size: 190%;
+    text-align: center;
+
+}
+
+article {
+    background-color: white;
+    padding: 4em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    flex: 1;
+
+}
+
+article h1 {
+    font-weight: 400;
+    font-size: xx-large;
+}
+
+article .links {
+    align-self: end;
+}
+
 main {
     background-color: white;
 }
@@ -54,15 +99,24 @@ main {
 
 .links {
     width: 1.3em;
+    display: flex;
+    gap: 0.8em;
+}
+
+.links svg,
+a svg {
+    flex-shrink: 0;
 }
 
 
 .medium {
     width: 1.1em;
+    gap: 0.6em;
 }
 
 .small {
     width: .9em;
+    gap: 0.3em;
 }
 
 footer {
