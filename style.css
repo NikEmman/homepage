@@ -7,7 +7,12 @@
 
 * {
     margin: 0;
-    background-color: #5f9ea0;
+
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
 }
 
 
@@ -32,3 +37,33 @@ h6 {
 }
 
 /* style start */
+
+
+
+header {
+    background-color: #0a90b1;
+}
+
+main {
+    background-color: white;
+}
+
+.card {
+    border: 2px black solid;
+}
+
+.links {
+    width: 1.3em;
+}
+
+.medium {
+    width: 1.1em;
+}
+
+.small {
+    width: .9em;
+}
+
+footer {
+    background-color: #0a90b1;
+}
