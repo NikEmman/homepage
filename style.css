@@ -47,7 +47,7 @@ header {
 .container {
     display: flex;
     justify-content: space-around;
-    padding: 2em;
+    padding: 4em;
 }
 
 .img-container {
@@ -91,10 +91,52 @@ article .links {
 
 main {
     background-color: white;
+    padding: 6em;
+
+}
+
+h2 {
+    font-size: xx-large;
+    font-weight: 400;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 4em;
 }
 
 .card {
     border: 2px black solid;
+    height: min-content;
+
+}
+
+.card>div:first-child {
+    height: 200px;
+    display: flex;
+    font-size: xx-large;
+    justify-content: center;
+    align-items: center;
+    background-color: cadetblue;
+}
+
+.card p {
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 2em;
+}
+
+
+.card-title {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2em;
+
+    padding-left: 2em;
+    padding-right: 2em;
+
+
 }
 
 .links {
