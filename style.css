@@ -37,29 +37,41 @@ h6 {
 }
 
 /* style start */
-
-
-
 header {
+    position: relative;
+    width: 100vw;
+}
+
+
+.blue {
     background-color: #0a90b1;
+    transform: rotate(-10deg);
+    transform-origin: bottom left;
+    width: 120vw;
+    height: 35vw;
 }
 
 .container {
+    position: absolute;
+    top: 0vw;
     display: flex;
     justify-content: space-around;
     padding: 4em;
+
+
 }
 
 .img-container {
     flex: 1;
     display: flex;
     background-image: url("assets/profile.jpg");
-    background-size: contain;
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
     align-items: end;
-    position: relative;
     left: 4em;
+    box-shadow: 5px 5px 5px red;
+    z-index: 2;
 }
 
 .img-container p {
@@ -77,6 +89,9 @@ article {
     flex-direction: column;
     gap: 2em;
     flex: 1;
+    box-shadow: 5px 5px 5px red;
+    margin-top: 30px;
+    margin-bottom: 30px;
 
 }
 
