@@ -56,31 +56,38 @@ header {
     top: 0vw;
     display: flex;
     justify-content: space-around;
-    padding: 4em;
+    padding: 6em;
+    max-height: fit-content;
+}
 
+.img-container,
+article,
+.card {
+    box-shadow: 2px 2px 10px rgb(83, 82, 82);
 
 }
 
 .img-container {
-    flex: 1;
-    display: flex;
-    background-image: url("assets/profile.jpg");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    align-items: end;
-    left: 4em;
-    box-shadow: 5px 5px 5px red;
+    position: relative;
+    text-align: center;
     z-index: 2;
 }
 
-.img-container p {
-    width: 100%;
-    color: white;
-    font-size: 190%;
-    text-align: center;
-
+.img-container img {
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
 }
+
+.img-container p {
+    font-size: xx-large;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 48%;
+    transform: translateX(-50%);
+}
+
 
 article {
     background-color: white;
@@ -88,10 +95,9 @@ article {
     display: flex;
     flex-direction: column;
     gap: 2em;
-    flex: 1;
-    box-shadow: 5px 5px 5px red;
     margin-top: 30px;
     margin-bottom: 30px;
+    text-overflow: none;
 
 }
 
@@ -101,7 +107,7 @@ article h1 {
 }
 
 article .links {
-    align-self: end;
+    align-self: flex-end;
 }
 
 main {
@@ -122,18 +128,17 @@ h2 {
 }
 
 .card {
-    border: 2px black solid;
     height: min-content;
 
 }
 
-.card>div:first-child {
+.screenshot {
     height: 200px;
     display: flex;
     font-size: xx-large;
     justify-content: center;
     align-items: center;
-    background-color: cadetblue;
+    background-color: #9d1c1b;
 }
 
 .card p {
@@ -151,10 +156,26 @@ h2 {
     padding-left: 2em;
     padding-right: 2em;
 
+}
 
+.purple {
+    background-color: #7c75c8;
+}
+
+.pink {
+    background-color: #c363b2;
+}
+
+.mustard {
+    background-color: #d78e3b;
+}
+
+.green {
+    background-color: #5d8e4e;
 }
 
 .links {
+    box-sizing: border-box;
     width: 1.3em;
     display: flex;
     gap: 0.8em;
@@ -181,7 +202,7 @@ footer {
     color: white;
     display: flex;
     width: 100vw;
-    padding: 3em;
+    padding: 6em;
     gap: 2em;
 }
 
@@ -190,4 +211,20 @@ footer {
     flex-direction: column;
     gap: 1em;
     max-width: 40%;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.phone,
+.email {
+    display: flex;
+    gap: 1em;
+}
+
+
+footer picture {
+    width: 60%;
 }
