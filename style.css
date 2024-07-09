@@ -38,8 +38,11 @@ h6 {
 
 /* style start */
 header {
-    position: relative;
+    position: absolute;
     width: 100vw;
+    display: flex;
+    top: 0px;
+    padding: 6em;
 }
 
 
@@ -49,15 +52,6 @@ header {
     transform-origin: bottom left;
     width: 120vw;
     height: 35vw;
-}
-
-.container {
-    position: absolute;
-    top: 0vw;
-    display: flex;
-    justify-content: space-around;
-    padding: 6em;
-    max-height: fit-content;
 }
 
 .img-container,
@@ -71,12 +65,13 @@ article,
     position: relative;
     text-align: center;
     z-index: 2;
+    min-width: 30vw;
 }
 
 .img-container img {
     display: block;
     margin: 0 auto;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .img-container p {
@@ -84,7 +79,7 @@ article,
     color: white;
     position: absolute;
     bottom: 0;
-    left: 48%;
+    left: 50%;
     transform: translateX(-50%);
 }
 
@@ -95,10 +90,9 @@ article {
     display: flex;
     flex-direction: column;
     gap: 2em;
-    margin-top: 30px;
-    margin-bottom: 30px;
     text-overflow: none;
-
+    min-height: 250px;
+    align-self: center;
 }
 
 article h1 {
@@ -123,7 +117,7 @@ h2 {
 
 .card-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
     gap: 4em;
 }
 
@@ -227,4 +221,10 @@ footer {
 
 footer picture {
     width: 60%;
+}
+
+@media screen and (max-width: 1199px) {
+    header {
+        flex-direction: column;
+    }
 }
