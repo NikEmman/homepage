@@ -225,6 +225,23 @@ footer picture {
 
 @media screen and (max-width: 1199px) {
     header {
+        padding: 2em;
         flex-direction: column;
+    }
+
+    .blue {
+        height: 40vh;
+    }
+
+    .img-container {
+        width: fit-content;
+        align-self: center;
+        min-width: 30vh;
+    }
+
+    article {
+        box-shadow: none;
+        padding: 2em;
+        background-color: transparent;
     }
 }
